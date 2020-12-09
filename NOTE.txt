@@ -1,0 +1,22 @@
+this folder craete by express-generator : https://expressjs.com/en/starter/generator.html
+
+Custome Folder: 
+* controllers - 
+* models - for Schema/Model files
+* middlewares
+
+`npm install method-overidde` -- for overider form method(HTML just have GET and POST method)
+`npm install connect-flash` -- adalah spesial area dari session yang digunakan untuk menyimpan pesan-pesan(messages)
+`npm install express-session` -- untuk membuat session middleware dengan memberikan opsi tambahan(options)
+
+
+
+#Testing REST API
+library: 
+*mocha ~ adalah runner test nya, atau yang menjalankan testnya.
+*chai ~ as assertion library, atau yang memiliki fungsi untuk mengecek dan menentukan testing itu benar atau tidak.
+*chai-http ~ adalah yang melukan request ke http kita/endpoint api milik kita.
+
+
+#Heroku
+Procfile - is file that first executed in heroku
