@@ -2,7 +2,8 @@ var seeder = require('mongoose-seed');
 var mongoose = require('mongoose');
 
 // Connect to MongoDB via Mongoose
-seeder.connect('mongodb://127.0.0.1:27017/db_staycation', {
+// seeder.connect('mongodb://127.0.0.1:27017/db_staycation', {
+seeder.connect('mongodb+srv://adamcanray:bwamern@staycation-cluster.nwrre.mongodb.net/db_staycation?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useCreateIndex: true,
   useFindAndModify: true,
@@ -1009,7 +1010,7 @@ var data = [
         memberId: mongoose.Types.ObjectId('5e96cbe292b97300fc903333'),
         bankId: mongoose.Types.ObjectId('5e96cbe292b97300fc903323'),
         payments: {
-          proofPayment: 'images/bukti.jpeg',
+          proofPayment: 'images/buktibayar.jpeg',
           bankFrom: 'BCA',
           status: 'Proses',
           accountHolder: 'ang'
