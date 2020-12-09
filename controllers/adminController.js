@@ -1,17 +1,17 @@
 /* Models */
-const Category = require('../models/Category')
-const Bank = require('../models/Bank')
-const Item = require('../models/Item')
-const Image = require('../models/Image')
-const Feature = require('../models/Feature')
-const Activity = require('../models/Activity')
-const Users = require('../models/Users')
-const Booking = require('../models/Booking')
-const Member = require('../models/Member')
+const Category = require('../models/Category');
+const Bank = require('../models/Bank');
+const Item = require('../models/Item');
+const Image = require('../models/Image');
+const Feature = require('../models/Feature');
+const Activity = require('../models/Activity');
+const Users = require('../models/Users');
+const Booking = require('../models/Booking');
+const Member = require('../models/Member');
 /* End Models */
-const fs = require('fs-extra')
-const path = require('path')
-const bcrypt = require('bcryptjs')
+const fs = require('fs-extra');
+const path = require('path');
+const bcrypt = require('bcryptjs');
 
 /* Execute Render Funtions or Endpoint Method */
 module.exports = {
