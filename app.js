@@ -1,12 +1,12 @@
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
+var cors = require('cors');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var methodOveridde = require('method-override');
 const session = require('express-session');
 const flash = require('connect-flash');
-// import mongoose
 const mongoose= require('mongoose');
 // connect to database
 // mongoose.connect('mongodb://127.0.0.1:27017/db_staycation', {
@@ -33,6 +33,7 @@ app.set('view engine', 'ejs');
 // End view engine setup
 
 // Addition
+app.use(cors()); // CORS
 app.use(methodOveridde('_method'));
 app.use(session({
   secret: 'keyboard cat',
